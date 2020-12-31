@@ -25,6 +25,18 @@ const diff = (a, b) => {
   return a.filter((n) => !b.includes(n));
 };
 
+const sum = (arr) => {
+  return new Promise((resolve, reject) => {
+    const ans = arr.reduce((acc, curr) => {
+      return acc + curr;
+    }, 0);
+    resolve(ans);
+  });
+};
+
+module.exports = sum;
+
 module.exports.divide = divide;
 module.exports.sort = sort;
 module.exports.diff = diff;
+module.exports.sum = sum;
