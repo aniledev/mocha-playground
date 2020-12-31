@@ -51,9 +51,20 @@ describe("Sort function", () => {
   });
   // WHAT TO DO ABOUT FRACTIONS???
   it("6. should sort floating point numbers in acsending order", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
+    const array = [0.1, -0.7, -0.235, 0.314, 0.488, -0.8, 0.2, -0.49, -0.31];
+    const expectedArray = [
+      -0.8,
+      -0.7,
+      -0.49,
+      -0.31,
+      -0.235,
+      0.1,
+      0.2,
+      0.314,
+      0.488,
+    ];
+    const actualArray = index.sort(array);
+    expect(actualArray).to.eql(expectedArray);
   });
   // throw an error if the paramter is not an array
   it("7. should throw an error when the parameter is not an array", () => {
