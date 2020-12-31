@@ -27,12 +27,14 @@ describe("Sort function", () => {
     const actualArray = index.sort(array);
     // 3. assert the expected vs actual output
     // https://www.chaijs.com/api/bdd/
-    expect(expectedArray).to.eql(actualArray);
+    expect(actualArray).to.eql(expectedArray);
   });
   it("3. should sort negative integers in acsending order", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
+    const array = [-7, -235, -488, -8000, -314, -2, -49];
+    const expectedArray = [-8000, -488, -314, -235, -49, -7, -2];
+    const actualArray = index.sort(array);
+
+    expect(actualArray).to.deep.equal(expectedArray);
   });
   it("4. should sort a combination of positive and negative integers in acsending order", () => {
     // 1. define data inputs
