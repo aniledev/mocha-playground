@@ -1,5 +1,6 @@
 // require the test file
-const divide = require("../index");
+const index = require("../index");
+
 // // require the chai assertion library
 // const chai = require("chai");
 // // require the expect interface of chai
@@ -24,7 +25,7 @@ describe("Divide function", () => {
     const expectedAnswer = 2;
 
     // 2. invoke the function
-    const actualAnswer = divide(a, b);
+    const actualAnswer = index.divide(a, b);
 
     // 3. assert that expected === actual; .equal() from chai performs a strictly equal comparison
     expect(actualAnswer).to.equal(expectedAnswer);
@@ -37,7 +38,7 @@ describe("Divide function", () => {
 
     // 2 invoke the function
     const fn = () => {
-      divide(a, b);
+      index.divide(a, b);
     };
 
     // 3. assert that expected === actual

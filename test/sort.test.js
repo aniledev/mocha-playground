@@ -1,6 +1,6 @@
 // require the test file
 // require the chai assertion library & require teh expect interface of chai
-const sort = require("../index");
+const index = require("../index");
 const expect = require("chai").expect;
 
 // WHAT SHOULD THE FUNCTION BE ABLE TO DO
@@ -11,13 +11,23 @@ const expect = require("chai").expect;
 describe("Sort function", () => {
   it("should sort posiive integers in acsending order", () => {
     // 1. define data inputs
-    //2. invoke the functio
+    const array = [10, 235, 488, 8000, 314, 2, 49];
+    const expectedArray = [2, 10, 49, 235, 314, 488, 8000];
+    //2. invoke the function
+    const actualArray = index.sort(array);
     // 3. assert the expected vs actual output
+    // https://www.chaijs.com/api/bdd/
+    expect(expectedArray).to.eql(actualArray);
   });
   it("should sort positive integers in ascending order even when there are duplicates", () => {
     // 1. define data inputs
-    //2. invoke the functio
+    const array = [10, 235, 488, 8000, 314, 2, 49];
+    const expectedArray = [2, 10, 49, 235, 314, 488, 8000];
+    //2. invoke the function
+    const actualArray = index.sort(array);
     // 3. assert the expected vs actual output
+    // https://www.chaijs.com/api/bdd/
+    expect(expectedArray).to.eql(actualArray);
   });
   it("should sort negative integers in acsending order", () => {
     // 1. define data inputs

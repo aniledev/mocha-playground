@@ -6,9 +6,7 @@ const divide = (a, b) => {
   return a / b;
 };
 
-module.exports == { divide, sort };
-
-function sort(list) {
+const sort = (list) => {
   for (let i = 2; i < list.length; i++) {
     let j = i;
     while (j > 0 && list[j - 1] > list[j]) {
@@ -20,4 +18,7 @@ function sort(list) {
     }
   }
   return list;
-}
+};
+
+module.exports.divide = divide;
+module.exports.sort = sort;
