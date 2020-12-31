@@ -9,6 +9,18 @@ const expect = require("chai").expect;
 // WHAT FORMAT SHOULD THE RESULT BE IN
 
 describe("Sort function", () => {
+  // the returned value should in fact be an array
+  it("8. should return a value with the data type of array", () => {
+    const array = [10, 235, 488, 8000, 314, 2, 49];
+    const actualArray = index.sort(array);
+    expect(actualArray).to.be.a("array");
+  });
+  // the returned value should should have the same length as the parameter
+  it("9. should return a an array with the same length as the parameter", () => {
+    const array = [10, 235, 488, 8000, 314, 2, 49];
+    const actualArray = index.sort(array);
+    expect(actualArray).to.have.lengthOf(array.length);
+  });
   it("1. should sort posiive integers in acsending order", () => {
     // 1. define data inputs
     const array = [10, 235, 488, 8000, 314, 2, 49];
@@ -72,18 +84,7 @@ describe("Sort function", () => {
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
-  // the returned value should in fact be an array
-  it("8. should return a value with the data type of array", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
-  });
-  // the returned value should should have the same length as the parameter
-  it("9. should return a an array with the same length as the parameter", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
-  });
+
   it("10. should return an array with only data types of numbers", () => {
     // 1. define data inputs
     //2. invoke the functio
