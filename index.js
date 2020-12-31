@@ -21,9 +21,10 @@ const sort = (list) => {
   return list;
 };
 
-const array = [-10, -235, -488, -8000, -314, -2, -49];
-
-sort(array);
+const diff = (a, b) => {
+  return a.filter((n) => !b.includes(n));
+};
 
 module.exports.divide = divide;
 module.exports.sort = sort;
+module.exports.diff = diff;
