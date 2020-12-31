@@ -41,12 +41,13 @@ describe("Sort function", () => {
     const expectedArray = [-8000, -314, -314, -235, -49, -49, -7];
     const actualArray = index.sort(array);
 
-    expect(actualArray).to.deep.equal(expectedArray);
+    expect(actualArray).to.eql(expectedArray);
   });
   it("5. should sort a combination of positive and negative integers in acsending order", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
+    const array = [10, -7, -235, 314, 488, -8000, 2, -49, -31];
+    const expectedArray = [-8000, -235, -49, -31, -7, 2, 10, 314, 488];
+    const actualArray = index.sort(array);
+    expect(actualArray).to.eql(expectedArray);
   });
   // WHAT TO DO ABOUT FRACTIONS???
   it("6. should sort floating point numbers in acsending order", () => {
