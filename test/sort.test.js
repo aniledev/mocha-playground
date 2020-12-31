@@ -34,38 +34,45 @@ describe("Sort function", () => {
     const expectedArray = [-8000, -488, -314, -235, -49, -7, -2];
     const actualArray = index.sort(array);
 
+    expect(actualArray).to.eql(expectedArray);
+  });
+  it("4. should sort negative integers in acsending order even when there are duplicates", () => {
+    const array = [-7, -235, -49, -8000, -314, -49, -314];
+    const expectedArray = [-8000, -314, -314, -235, -49, -49, -7];
+    const actualArray = index.sort(array);
+
     expect(actualArray).to.deep.equal(expectedArray);
   });
-  it("4. should sort a combination of positive and negative integers in acsending order", () => {
+  it("5. should sort a combination of positive and negative integers in acsending order", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
   // WHAT TO DO ABOUT FRACTIONS???
-  it("5. should sort floating point numbers in acsending order", () => {
+  it("6. should sort floating point numbers in acsending order", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
   // throw an error if the paramter is not an array
-  it("6. should throw an error when the parameter is not an array", () => {
+  it("7. should throw an error when the parameter is not an array", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
   // the returned value should in fact be an array
-  it("7. should return a value with the data type of array", () => {
+  it("8. should return a value with the data type of array", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
   // the returned value should should have the same length as the parameter
-  it("8. should return a an array with the same length as the parameter", () => {
+  it("9. should return a an array with the same length as the parameter", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
-  it("9. should return an array with only data types of numbers", () => {
+  it("10. should return an array with only data types of numbers", () => {
     // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
