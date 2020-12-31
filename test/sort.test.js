@@ -2,7 +2,6 @@
 // require the chai assertion library & require teh expect interface of chai
 const index = require("../index");
 const expect = require("chai").expect;
-
 // WHAT SHOULD THE FUNCTION BE ABLE TO DO
 // WHAT TYPE OF PARAMETERS
 // WHEN SHOULD IT THROW AN ERROR
@@ -77,16 +76,5 @@ describe("Sort function", () => {
     ];
     const actualArray = index.sort(array);
     expect(actualArray).to.eql(expectedArray);
-  });
-  // throw an error if the paramter is not an array
-  it("7. should throw an error when the parameter is not an array", () => {
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
-  });
-
-  it("10. should return an array with only data types of numbers", () => {
-    // 1. define data inputs
-    //2. invoke the functio
-    // 3. assert the expected vs actual output
   });
 });
