@@ -35,8 +35,6 @@ const sum = (arr) => {
   });
 };
 
-module.exports = sum;
-
 module.exports.divide = divide;
 module.exports.sort = sort;
 module.exports.diff = diff;
