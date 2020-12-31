@@ -80,7 +80,6 @@ describe("Sort function", () => {
   });
   // throw an error if the paramter is not an array
   it("7. should throw an error when the parameter is not an array", () => {
-    // 1. define data inputs
     //2. invoke the functio
     // 3. assert the expected vs actual output
   });
